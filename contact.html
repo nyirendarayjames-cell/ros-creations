@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ros Creations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Ros Creations</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#media-section">Downloads</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <h1>Contact Ros Creations</h1>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Location:</strong> Mzuzu, Malawi</p>
+                <p><strong>Email:</strong> nyirendarayjames@gmail.com</p>
+                <p><strong>Phone:</strong> +265 880 021 113/994 589 499</p>
+            </div>
+
+            <form class="contact-form" 
+                  name="contact" 
+                  method="POST" 
+                  data-netlify="true"
+                  netlify-honeypot="bot-field">
+                
+                <!-- Hidden field required by Netlify -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <!-- Honeypot spam protection (invisible to users) -->
+                <div style="display: none;">
+                    <input name="bot-field">
+                </div>
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject (Optional)">
+                <textarea name="message" placeholder="Your Message to Ros" rows="6" required></textarea>
+                
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Ros Creations</h3>
+                <p>Media Solutions from Mzuzu, Malawi</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#media-section">Downloads</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Mzuzu, Malawi</p>
+                <p>nyirendarayjames@gmail.com</p>
+                <p>+265 880 021 113/994 589 499</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Ros Creations Media Solutions. All Rights Reserved.</p>
+            <p>Made with ❤️ in Malawi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
